@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.css'
 import about_img from '../../assets/number4.jpeg'
-import play_icon from '../../assets/number3.jpeg'
 
 const About = () => {
   return (
