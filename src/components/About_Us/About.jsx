@@ -13,7 +13,7 @@ const About = () => {
             <h3>About Business</h3>
             <h2>Somehtign about somthing</h2>
             <p>asudhgladgadsadsajbsdljfbdshjfbdfhff  dsfljkgsdlhfga dgfhljadglfh dh df sakjhfgdvs </p>
-            <p>asdlis jhsdj  aslj  </p>
+            <p>This is an example jhsdj  aslj  </p>
         </div>
 
     </div>
