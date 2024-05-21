@@ -1,0 +1,38 @@
+.service{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.service-left{
+    flex-basis: 56%;
+}
+
+.service-right{
+    flex-basis: 40%;
+}
+
+.service-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service h3{
+    font-weight: 600;
+    font-weight: 16px;
+    color:#212121;
+}
+
+.service h2{
+    font-size: 35px;
+    color: #000f38;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.service p{
+    color:#000f38;
+    margin-bottom: 15px;
+}
