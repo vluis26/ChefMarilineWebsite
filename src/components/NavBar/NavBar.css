@@ -1,6 +1,6 @@
 nav{
     width: 100%;
-    color: #fff;
+    color: black;
     padding: 4px 0;
     position: fixed;
     top: 0;
@@ -12,7 +12,7 @@ nav{
 }
 
 .logo{
-    width: 180px;
+    width: 120px;
 }
 
 nav ul li{
@@ -23,6 +23,6 @@ nav ul li{
 }
 
 .dark-nav{
-    background: darkblue;
+    background: rgb(239, 210, 208);
     transition: 0.5s;
 }
