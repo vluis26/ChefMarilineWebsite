@@ -1,32 +1,50 @@
-import React from 'react'
-import './NavBar.css'
-import logo from '../../assets/logo.png'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import { Link } from 'react-scroll'
+import React, { useState, useEffect } from 'react';
+import './NavBar.css';
+import logo from '../../assets/logo.png';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 
-export const NavBar = () => {
-
+const NavBar = () => {
   const [sticky, setSticky] = useState(false);
+  const location = useLocation();
 
-  useEffect(()=>{
-    window.addEventListener('scroll',()=>{
-      window.scrollY > 500 ? setSticky(true) : setSticky(false)
-    })
-  },[])
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     window.scrollY > 500 ? setSticky(true) : setSticky(false);
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
+
+  // Check if current path is '/schedule-meeting'
+  const isScheduleMeetingPage = location.pathname === '/schedule-meeting';
+
+  // Render null if on '/schedule-meeting' to hide NavBar
+  if (isScheduleMeetingPage) return null;
+
   return (
-    <nav className={`container ${sticky? 'dark-nav' : ''}`}>
-        <img src={logo} alt='' className='logo'/>
-        <ul>
-          {/* change offset to position scroll feature */}
-            <li><Link to='hero' smooth={true} offset={-100} duration={500}>Home</Link></li>
-            <li><Link to='about' smooth={true} offset={-150} duration={500}>About Us</Link></li>
-            <li><Link to='service' smooth={true} offset={-325} duration={500}>Services</Link></li>
-            <li><Link to='photo' smooth={true} offset={-300} duration={500}>Photos</Link></li>
-            <li><Link to='contact' smooth={true} offset={-100} duration={500}>Contact Us</Link></li>
-        </ul>
+    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+      <img src={logo} alt='' className='logo' />
+      {/* <ul>
+        <li>
+          <RouterLink to="/">Home</RouterLink>
+        </li>
+        <li>
+          <ScrollLink to='about' smooth={true} offset={-150} duration={500}>About Us</ScrollLink>
+        </li>
+        <li>
+          <ScrollLink to='service' smooth={true} offset={-325} duration={500}>Services</ScrollLink>
+        </li>
+        <li>
+          <ScrollLink to='photo' smooth={true} offset={-300} duration={500}>Photos</ScrollLink>
+        </li>
+        <li>
+          <ScrollLink to='contact' smooth={true} offset={-100} duration={500}>Contact Us</ScrollLink>
+        </li>
+      </ul> */}
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

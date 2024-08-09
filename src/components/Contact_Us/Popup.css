@@ -1,0 +1,94 @@
+.contact {
+  margin: 80px auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #ffffff; /* Add a background color */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-col {
+  flex-basis: calc(50% - 10px); /* Adjust for space between columns */
+  margin-bottom: 20px;
+}
+
+.contact-image {
+  width: 100%;
+  border-radius: 12px; /* Round corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to image */
+}
+
+.contact-form {
+  width: 100%;
+  padding: 25px; /* Added padding for spacing inside the form */
+  background-color: #f8f9fa; /* Light grey background for the form */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Added shadow for form depth */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Increased spacing between rows */
+}
+
+.form-group {
+  flex-basis: calc(50% - 10px); /* Adjust for space between columns */
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333333; /* Darker text color for labels */
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px; /* Increased padding for input fields */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Rounded corners */
+  resize: none;
+  font-size: 16px; /* Consistent font size for input fields */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgb(239, 210, 208); /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.contact-form textarea {
+  height: 150px; /* Increased height for textarea */
+}
+
+.contact-form button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: grey; /* Primary blue color */
+  width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.contact-form button:hover {
+  background-color: rgb(105, 105, 105); /* Darker blue on hover */
+}
+
+.contact-form span {
+  display: block;
+  margin-top: 15px; /* Adjust spacing above result message */
+  font-size: 14px;
+  color: #333333; /* Darker color for result message */
+}

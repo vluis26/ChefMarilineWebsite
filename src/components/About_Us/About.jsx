@@ -10,10 +10,9 @@ const About = () => {
 
         </div>
         <div className="about-right">
-            <h3>About Business</h3>
-            <h2>Somehtign about somthing</h2>
-            <p>asudhgladgadsadsajbsdljfbdshjfbdfhff  dsfljkgsdlhfga dgfhljadglfh dh df sakjhfgdvs </p>
-            <p>This is an example jhsdj  aslj  </p>
+            <h3>At ChefMariline Consulting</h3>
+            <h2>Helping Restaurants</h2>
+            <p>Chef Mariline Villa specializes in empowering restaurant owners and aspiring restaurateurs to achieve their business goals through expert guidance and practical strategies. With a proven track record of transforming restaurants into successful, high-performing establishments, we offer comprehensive consulting services tailored to your unique needs. By partnering with us, you'll gain access to our extensive industry knowledge, innovative marketing techniques, and efficient operational solutions, ensuring your restaurant stands out in a competitive market. Choose ChefMariline Consulting to elevate your business and secure lasting success.</p>
         </div>
 
     </div>

@@ -1,38 +1,90 @@
-.service{
-    margin: 100px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+.service {
+  margin: 80px auto;
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px; /* Set a max width for larger screens */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 12px;
+  background-color: #f8f9fa; /* Light background for contrast */
 }
 
-.service-left{
-    flex-basis: 56%;
+.service-left {
+  flex-basis: 60%; /* Slightly increase width */
+  padding-right: 20px; /* Add padding to the right */
 }
 
-.service-right{
-    flex-basis: 40%;
+.service-right {
+  flex-basis: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.service-img{
-    width: 100%;
-    border-radius: 10px;
+.service-img {
+  max-width: 100%;
+  border-radius: 12px; /* Slightly increase border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-.service h3{
-    font-weight: 600;
-    font-weight: 16px;
-    color:#212121;
+.service h3 {
+  font-weight: 600;
+  font-size: 18px; /* Slightly larger font size */
+  color: #333333; /* Darker color for better readability */
+  margin-bottom: 8px;
 }
 
-.service h2{
-    font-size: 35px;
-    color: #000f38;
-    margin: 10px 0;
-    max-width: 400px;
+.service h2 {
+  font-size: 36px; /* Increase font size */
+  color: #0d1b57; /* Slightly darker blue */
+  margin: 12px 0;
+  max-width: 450px; /* Increase max width */
+  line-height: 1.2; /* Improve line height */
 }
 
-.service p{
-    color:#000f38;
-    margin-bottom: 15px;
+.service p {
+  color: #0d1b57;
+  margin-bottom: 20px;
+  font-size: 16px; /* Increase font size for readability */
+  line-height: 1.6; /* Improve line height for readability */
+}
+
+.service-left ul {
+  list-style: none;
+  padding: 0;
+  text-align: left; /* Align text to the left */
+  font-size: 16px; /* Adjust font size */
+}
+
+.service-left li {
+  text-align: left;
+  margin-bottom: 15px; /* Increase spacing between items */
+  cursor: pointer; /* Add cursor pointer for interactive items */
+  padding: 10px;
+  background-color: #ffffff; /* Add background color for contrast */
+  border-radius: 8px; /* Round the corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.service-left li:hover {
+  background-color: #e6e9ef; /* Change background on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.dropdown-title {
+  font-weight: 500;
+  color: #212121;
+  font-size: 18px; /* Match the font size with li */
+}
+
+.dropdown-content {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f3f7;
+  border-radius: 8px;
+  line-height: 1.5;
+  font-size: 15px; /* Adjust font size */
+  color: #212121; /* Consistent text color */
 }
